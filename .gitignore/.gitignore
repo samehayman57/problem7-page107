@@ -1,0 +1,19 @@
+#include <iostream>
+
+using namespace std;
+
+int main()
+{
+    float price , years , inflation;
+    cout<<"enter the price :";
+    cin>>price;
+    cout<<"enter years :";
+    cin>>years;
+    cout<<"enter inflation rate :";
+    cin>>inflation;
+    for (int i=1 ; i<=years ; i++){
+            price=price+price*(inflation/100);
+    }
+    cout<<"the new price is :"<<price<<endl;
+    return 0;
+}
